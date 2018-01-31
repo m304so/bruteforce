@@ -10,7 +10,7 @@ $url = 'http://www.rollshop.co.il/test.php';
 $wrongPattern = 'WRONG =(';
 
 $Bruteforce = new Bruteforce($url, $wrongPattern);
-$Bruteforce->setThreadsAmount(50);
+$Bruteforce->setThreadsAmount(35);
 $Bruteforce->start();
 
 echo 'Password: ' . $Bruteforce->result . '<br>';
